@@ -3,6 +3,7 @@
 int sumar(int a, int b);
 int restar(int a, int b);
 int multiplicar(int a, int b);
+float dividir(int a, int b);
 
 int main() {
     int opcion;
@@ -17,13 +18,6 @@ int main() {
         printf("4. Dividir\n");
         printf("5. Salir\n");
         printf("Selecciona una opcion: ");
-        scanf("%d", &opcion);
-
-        printf("ingrese el primer valor\n");
-        scanf("%d", &num1);
-
-        printf("ingrese el segundo valor\n");
-        scanf("%d", &num2);
         scanf("%d", &opcion); getchar();
 
         printf("Ingrese el primer valor: ");
@@ -33,20 +27,13 @@ int main() {
 
         switch (opcion) {
             case 1:
-
-
-
-
-
-                resultado = sumar(num1, num2);
-                printf("Resultado de la suma: %d \n\n"  , resultado);
                 resultado = sumar(num1, num2);
                 printf("Resultado de la suma: %d \n\n"  , resultado);
                 break;
 
             case 2:
                 resultado = restar(num1, num2);
-                printf("Resultado de la resta: %d\n\n", resultado);
+                printf("Resultado de la resta: %d \n\n", resultado);
                 break;
 
             case 3:
@@ -56,7 +43,7 @@ int main() {
 
             case 4:
                 resDivision = dividir(num1, num2);
-                printf("Resultado de la división: %f\n\n", resDivision);
+                printf("Resultado de la división: %f \n\n", resDivision);
                 break;
 
             case 5:
