@@ -31,7 +31,7 @@ int main() {
 
 
                 resultado = sumar(num1, num2);
-                printf("Resultado de la suma: %d \n\n" , resultado);
+                printf("Resultado de la suma: %d \n\n"  , resultado);
                 break;
 
             case 2:
