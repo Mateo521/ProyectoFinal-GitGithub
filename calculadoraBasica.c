@@ -16,10 +16,21 @@ int main() {
         printf("4. Salir\n");
         printf("Selecciona una opcion: ");
         scanf("%d", &opcion);
+
+        printf("ingrese el primer valor\n");
+        scanf("%d", &num1);
+
+        printf("ingrese el segundo valor\n");
+        scanf("%d", &num2);
         switch (opcion) {
             case 1:
-                resultado = sumar(0, 0);
-                printf("Resultado de la suma: \n\n");
+
+
+
+
+
+                resultado = sumar(num1, num2);
+                printf("Resultado de la suma: %d \n\n" , resultado);
                 break;
 
             case 2:
@@ -29,7 +40,7 @@ int main() {
 
             case 3:
                 resultado = multiplicar(num1, num2);
-                printf("Resultado de la multiplicacion: \n\n");
+                printf("Resultado de la multiplicacion: %d \n\n", resultado);
                 break;
             case 4:
                 printf("Saliendo de la calculadora...\n\n");
